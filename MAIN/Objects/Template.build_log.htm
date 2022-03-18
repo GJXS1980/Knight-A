@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jim Microsoft, Microsoft, LIC=Z3CX7-ERNNX-151TV-PZW1U-VDYAW-ESK2B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\stm32_ws\例程0 Template工程模板\USER\Template.uvprojx
+Project File Date:  01/23/2019
+
+<h2>Output:</h2>
+Build target 'Template'
+compiling main.c...
+main.c(15): warning:  #223-D: function "TIM3_PWM_Init" declared implicitly
+        TIM3_PWM_Init(500-1,84-1);      //84M/84=1Mhz?l??????,??????500??????PWM???? 1M/500=2Khz.     
+main.c(29): warning:  #185-D: dynamic initialization in unreachable code
+        u32 t=0;
+main.c: 2 warnings, 0 errors
+compiling usart.c...
+linking...
+.\Objects\Template.axf: Error: L6218E: Undefined symbol TIM3_PWM_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\Objects\Template.axf" - 1 Error(s), 2 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\stm32_ws\例程0 Template工程模板\USER\RTE
+  d:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.12.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
